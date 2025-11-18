@@ -47,6 +47,7 @@ class ApiService {
       throw Exception('Failed to fetch OneCategory');
     }
   }
+
   Future<List<dynamic>> timecategory( String type, int maxReadyTime, int number) async {
     final response = await http.get(
       Uri.parse('$_baseUrl/recipes/complexSearch?type=$type&maxReadyTime=$maxReadyTime&number=$number&apiKey=$_apiKey'),
@@ -148,10 +149,6 @@ class ApiService {
     }
   }
 
-
-
-
-  
   Future<Map<String, dynamic>> connectUser(String username, String email) async {
   final response = await http.post(
     Uri.parse('$_baseUrl/users/connect?apiKey=$_apiKey'), // Use your API key here
@@ -278,9 +275,6 @@ Future<List<Map<String, dynamic>>> fetchRecipeInstructions(int id) async {
     throw Exception('Failed to fetch recipe instructions');
   }
 }
-
-
-  
 
   // 9. Favorites (Storing locally)
   List<int> favorites = [];

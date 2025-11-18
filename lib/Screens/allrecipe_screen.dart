@@ -161,19 +161,19 @@ class _AllRecipesScreenState extends State<AllRecipesScreen> {
                                       ),
                                       child: Row(
                                         children: [
-                                          Icon(
-                                            Icons.thumb_up,
-                                            size: 14,
-                                            color: widget.isLiked[index]
-                                                ? const Color.fromARGB(255, 93, 167, 199)
-                                                : Colors.white, // Change icon color based on the like state
-                                          ),
-                                          const SizedBox(width: 4),
-                                          Text(
-                                            '${widget.initialLikeCounts[index]}', // Use the specific like count for this item
-                                            style: const TextStyle(
-                                                fontSize: 12, color: Colors.white),
-                                          ),
+                                          // Icon(
+                                          //   Icons.thumb_up,
+                                          //   size: 14,
+                                          //   color: widget.isLiked[index]
+                                          //       ? const Color.fromARGB(255, 93, 167, 199)
+                                          //       : Colors.white, // Change icon color based on the like state
+                                          // ),
+                                          // const SizedBox(width: 4),
+                                          // Text(
+                                          //   '${widget.initialLikeCounts[index]}', // Use the specific like count for this item
+                                          //   style: const TextStyle(
+                                          //       fontSize: 12, color: Colors.white),
+                                          // ),
                                         ],
                                       ),
                                     ),

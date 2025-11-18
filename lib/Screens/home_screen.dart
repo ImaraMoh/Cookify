@@ -666,19 +666,19 @@ Future<void> _addRecipesToFirestore(List<dynamic> recipes) async {
                                                         ),
                                                         child: Row(
                                                           children: [
-                                                            Icon(
-                                                              Icons.thumb_up,
-                                                              size: 14,
-                                                              color: isLiked[index]
-                                                                  ? const Color.fromARGB(255, 93, 167, 199)
-                                                                  : Colors.white,
-                                                            ),
-                                                            const SizedBox(width: 4),
-                                                            Text(
-                                                              '${likeCounts[index]}',
-                                                              style: const TextStyle(
-                                                                  fontSize: 12, color: Colors.white),
-                                                            ),
+                                                            // Icon(
+                                                            //   Icons.thumb_up,
+                                                            //   size: 14,
+                                                            //   color: isLiked[index]
+                                                            //       ? const Color.fromARGB(255, 93, 167, 199)
+                                                            //       : Colors.white,
+                                                            // ),
+                                                            // const SizedBox(width: 4),
+                                                            // Text(
+                                                            //   '${likeCounts[index]}',
+                                                            //   style: const TextStyle(
+                                                            //       fontSize: 12, color: Colors.white),
+                                                            // ),
                                                           ],
                                                         ),
                                                       ),
@@ -824,18 +824,18 @@ Future<void> _addRecipesToFirestore(List<dynamic> recipes) async {
                                                           ),
                                                           child: Row(
                                                             children: [
-                                                              Icon(
-                                                                Icons.thumb_up,
-                                                                size: 14,
-                                                                color: isLiked[9]
-                                                                    ? const Color.fromARGB(255, 93, 167, 199)
-                                                                    : Colors.white,
-                                                              ),
-                                                              const SizedBox(width: 4),
-                                                              Text(
-                                                                '${likeCounts[9]}',
-                                                                style: const TextStyle(fontSize: 12, color: Colors.white),
-                                                              ),
+                                                              // Icon(
+                                                              //   Icons.thumb_up,
+                                                              //   size: 14,
+                                                              //   color: isLiked[9]
+                                                              //       ? const Color.fromARGB(255, 93, 167, 199)
+                                                              //       : Colors.white,
+                                                              // ),
+                                                              // const SizedBox(width: 4),
+                                                              // Text(
+                                                              //   '${likeCounts[9]}',
+                                                              //   style: const TextStyle(fontSize: 12, color: Colors.white),
+                                                              // ),
                                                             ],
                                                           ),
                                                         ),

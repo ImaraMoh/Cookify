@@ -363,30 +363,30 @@ class _ProfileScreenState extends State<ProfileScreen> {
               },
             ),
             // Dark Mode Setting with Modern UI
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-              child: Consumer<ThemeProvider>(
-                builder: (context, themeProvider, child) {
-                  return ListTile(
-                    contentPadding: EdgeInsets.zero,
-                    title: const Text(
-                      'Dark Mode',
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-                    ),
-                    trailing: Switch.adaptive(
-                      value: themeProvider.isDarkMode,
-                      activeColor: Colors.white,
-                      activeTrackColor: Colors.black,
-                      inactiveThumbColor: Colors.grey.shade300,
-                      inactiveTrackColor: Colors.grey.shade600,
-                      onChanged: (bool value) {
-                        themeProvider.toggleTheme();
-                      },
-                    ),
-                  );
-                },
-              ),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+            //   child: Consumer<ThemeProvider>(
+            //     builder: (context, themeProvider, child) {
+            //       return ListTile(
+            //         contentPadding: EdgeInsets.zero,
+            //         title: const Text(
+            //           'Dark Mode',
+            //           style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+            //         ),
+            //         trailing: Switch.adaptive(
+            //           value: themeProvider.isDarkMode,
+            //           activeColor: Colors.white,
+            //           activeTrackColor: Colors.black,
+            //           inactiveThumbColor: Colors.grey.shade300,
+            //           inactiveTrackColor: Colors.grey.shade600,
+            //           onChanged: (bool value) {
+            //             themeProvider.toggleTheme();
+            //           },
+            //         ),
+            //       );
+            //     },
+            //   ),
+            // ),
 
 
             // Log Out Button with Gradient Styling

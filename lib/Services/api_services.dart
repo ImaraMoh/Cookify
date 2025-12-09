@@ -7,12 +7,12 @@ class ApiService {
   // Set base URL and API key directly here
   final String _baseUrl = 'https://api.spoonacular.com';
 
-<<<<<<< HEAD
+
   final String _apiKey = '9ecee3af427949d4b5e9831e0b458576'; // Replace with your actual API key
-=======
-  final String _apiKey =
-      '9ecee3af427949d4b5e9831e0b458576'; // Replace with your actual API key
->>>>>>> d240b15987309f0b54b528b7e6d03fbd1bdc1d6b
+
+//   final String _apiKey =
+//       '9ecee3af427949d4b5e9831e0b458576'; // Replace with your actual API key
+// >>>>>>> d240b15987309f0b54b528b7e6d03fbd1bdc1d6b
 
 //         9ecee3af427949d4b5e9831e0b458576
 // a2e8aeca685d4b33975aa0fec27c5fb3
@@ -55,12 +55,8 @@ class ApiService {
     }
   }
 
-<<<<<<< HEAD
-  Future<List<dynamic>> timecategory( String type, int maxReadyTime, int number) async {
-=======
   Future<List<dynamic>> timecategory(
       String type, int maxReadyTime, int number) async {
->>>>>>> 59df5c70f1ab6f2e5629a40f7e8716ebff70d460
     final response = await http.get(
       Uri.parse(
           '$_baseUrl/recipes/complexSearch?type=$type&maxReadyTime=$maxReadyTime&number=$number&apiKey=$_apiKey'),
@@ -161,25 +157,6 @@ class ApiService {
     }
   }
 
-<<<<<<< HEAD
-  Future<Map<String, dynamic>> connectUser(String username, String email) async {
-  final response = await http.post(
-    Uri.parse('$_baseUrl/users/connect?apiKey=$_apiKey'), // Use your API key here
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: json.encode({
-      'username': username,
-      'email': email,
-    }),
-  );
-
-  if (response.statusCode == 200) {
-    // If the connection is successful, the response will contain the username, password, and hash.
-    return json.decode(response.body);
-  } else {
-    throw Exception('Failed to connect user to Spoonacular');
-=======
   Future<Map<String, dynamic>> connectUser(
       String username, String email) async {
     final response = await http.post(
@@ -200,7 +177,6 @@ class ApiService {
     } else {
       throw Exception('Failed to connect user to Spoonacular');
     }
->>>>>>> 59df5c70f1ab6f2e5629a40f7e8716ebff70d460
   }
 
   // 8. Autocomplete Suggestions
@@ -223,8 +199,6 @@ class ApiService {
     }
   }
 
-<<<<<<< HEAD
-=======
   Future<List<String>> autocompleteingredients(String query) async {
     if (query.isEmpty) {
       return [];
@@ -315,7 +289,6 @@ class ApiService {
     }
   }
 
->>>>>>> 59df5c70f1ab6f2e5629a40f7e8716ebff70d460
   // 9. Favorites (Storing locally)
   List<int> favorites = [];
 
